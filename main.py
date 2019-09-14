@@ -151,12 +151,12 @@ def run(config_path):
     answer = input()
     print(answer)
 
-    while (answer != "0" and answer != "1") :
+    while (answer.strip() != "0" and answer != "1") :
 
         print("Please select a 0 (play) or 1 (watch): ", end = '')
         answer = input()
 
-    if answer == "1" :
+    if answer.strip() == "1" :
 
         config = neat.config.Config(neat.DefaultGenome,neat.DefaultReproduction,neat.DefaultSpeciesSet,neat.DefaultStagnation,config_path)
 

@@ -70,7 +70,7 @@ def play():
                 pipe.move()
 
                 if pipe.collide(bird):
-                    isDead = True
+                    birdIsDead = True
                     bird.tilt = -90
                     
                 # If bird passes the pipes
